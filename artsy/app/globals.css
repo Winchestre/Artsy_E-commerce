@@ -23,7 +23,7 @@ li, .home>p, section>h3, section>ps {
     font-family: 'Satoshi', sans-serif;
 }
 
-.home h1 {
+.home h1, span {
     font-family: 'Clash Display', sans-serif;
     font-weight: 500;
 }

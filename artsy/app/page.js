@@ -5,17 +5,13 @@ import slide2 from '../public/assets/carousel_img/carousel3.png';
 import slide3 from '../public/assets/carousel_img/carousel4.png';
 import slide4 from '../public/assets/carousel_img/carousel5.png';
 import product_image1 from '../public/assets/product_img/product4.png';
+import product_image2 from '../public/assets/product_img/product1.png';
 import user1 from '../public/assets/user_img/Ellipse1.png';
 import user2 from '../public/assets/user_img/Ellipse2.png';
 import user3 from '../public/assets/user_img/Ellipse3.png';
 import user4 from '../public/assets/user_img/Ellipse4.png';
 import user5 from '../public/assets/user_img/Ellipse5.png';
-import user6 from '../public/assets/user_img/Ellipse6.png';
-import user7 from '../public/assets/user_img/Ellipse7.png';
-import user8 from '../public/assets/user_img/Ellipse8.png';
-import user9 from '../public/assets/user_img/Ellipse9.png';
-import user10 from '../public/assets/user_img/Ellipse10.png';
-
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
 
 
@@ -56,57 +52,145 @@ export default function Home() {
       </div>
       <section className="featured-products">
         <h3 className="text-bold text-lg">Featured Products</h3>
-        <div className="product-wrap pt-4">
-          <div className="product-card">
+        <div className="product-wrap pt-4 flex-col space-y-8">
+          <div className="product-card md:flex md:gap-3 relative">
             <Image
               src={product_image1}
-              width={350}
-              height={350}
+              sizes="100vw"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
               alt="carousel image"
             />
-            <div className="product-description">
+            <div className="product-description pt-4 md:pt-0">
+              <span className="md:static absolute inset-y-4 inset-x-1/4 text-white md:text-black text-bold">
+                Boolean Egyptian
+              </span>
               <p className="text-[0.75rem]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis, lectus magna fringilla
                 urna, porttitor rhoncus dolor pur
               </p>
-              <div className="user-reviews">
-                <div className="user-image-wrap flex">
-                  <Image
-                    src={user1}
-                    width={30}
-                    height={30}
-                    alt="user image"
+              <div className="md:flex md:justify-between">
+                <div className="user-reviews flex gap-3 items-center pt-4 border-b-black">
+                  <div className="user-image-wrap flex">
+                    <Image
+                      src={user1}
+                      width={20}
+                      height={20}
+                      alt="user image"
+                    />
+                    <Image
+                      src={user2}
+                      width={20}
+                      height={20}
+                      alt="user image"
+                    />
+                    <Image
+                      src={user3}
+                      width={20}
+                      height={20}
+                      alt="user image"
+                    />
+                    <Image
+                      src={user4}
+                      width={20}
+                      height={30}
+                      alt="user image"
+                    />
+                    <Image
+                      src={user5}
+                      width={20}
+                      height={20}
+                      alt="user image"
+                    />
+                  </div>
+                  <h3 className="text-sm">64 major creators</h3>
+                </div>
+                <div className="md:mt-3 md:static absolute inset-y-16 right-4 text-white md:text-black">
+                  <FaRegArrowAltCircleRight 
+                    style={{
+                      width: '24px',
+                      height: 'auto',
+                    }}
                   />
-                  <Image
-                    src={user2}
-                    width={30}
-                    height={30}
-                    alt="user image"
-                  />
-                  <Image
-                    src={user3}
-                    width={30}
-                    height={30}
-                    alt="user image"
-                  />
-                  <Image
-                    src={user1}
-                    width={30}
-                    height={30}
-                    alt="user image"
-                  />
-                  <Image
-                    src={user4}
-                    width={30}
-                    height={30}
-                    alt="user image"
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="product-card md:flex md:gap-3 relative">
+            <Image
+              src={product_image2}
+              sizes="100vw"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+              alt="carousel image"
+            />
+            <div className="product-description pt-4 md:pt-0">
+              <span className="md:static absolute inset-y-4 inset-x-1/4 text-white md:text-black text-bold">
+                Oloibiri 1997
+              </span>
+              <p className="text-[0.75rem]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                urna, porttitor rhoncus dolor pur
+              </p>
+              <div className="md:flex md:justify-between">
+                <div className="user-reviews flex gap-3 items-center pt-4">
+                  <div className="user-image-wrap flex">
+                    <Image
+                      src={user1}
+                      width={20}
+                      height={20}
+                      alt="user image"
+                    />
+                    <Image
+                      src={user2}
+                      width={20}
+                      height={20}
+                      alt="user image"
+                    />
+                    <Image
+                      src={user3}
+                      width={20}
+                      height={20}
+                      alt="user image"
+                    />
+                    <Image
+                      src={user4}
+                      width={20}
+                      height={30}
+                      alt="user image"
+                    />
+                    <Image
+                      src={user5}
+                      width={20}
+                      height={20}
+                      alt="user image"
+                    />
+                  </div>
+                  <h3 className="text-sm">64 major creators</h3>
+                </div>
+                <div className="md:mt-3 md:static absolute inset-y-16 right-4 text-white md:text-black">
+                  <FaRegArrowAltCircleRight 
+                    style={{
+                      width: '24px',
+                      height: 'auto',
+                    }}
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="mt-12">
+
       </section>
     </main>
   );
