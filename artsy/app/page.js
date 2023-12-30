@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import img1 from '../public/assets/carousel_img/carousel1.png';
 import slide1 from '../public/assets/carousel_img/carousel2.png';
 import slide2 from '../public/assets/carousel_img/carousel3.png';
@@ -11,14 +12,13 @@ import user2 from '../public/assets/user_img/Ellipse2.png';
 import user3 from '../public/assets/user_img/Ellipse3.png';
 import user4 from '../public/assets/user_img/Ellipse4.png';
 import user5 from '../public/assets/user_img/Ellipse5.png';
-import { FaRegArrowAltCircleRight } from 'react-icons/fa';
-
+import circle from '../public/assets/svg_img/Ellipse 6.svg';
 
 
 export default function Home() {
   return (
-    <main className="home mx-3 md:w-100 md:mt-4 md:mx-10">
-      <div className="w-full text-center lg:w-1/2 lg:mx-auto">
+    <main className="home">
+      <div className=" mx-3 text-center lg:w-1/2 lg:mx-auto md:w-100 md:mt-4 md:mx-10">
         <h1 className="text-2xl md:text-4xl/[60px]">
           Photography is poetry & beautiful untold stories
         </h1>
@@ -28,7 +28,7 @@ export default function Home() {
           access.
         </p>
       </div>
-      <div className="image-cascade pt-6 pb-12">
+      <div className="image-cascade pt-6 pb-12 md:w-100 md:mt-4 md:mx-10 mx-3">
         <div className="md:hidden">
           <Image src={img1} width={350} height={350} alt="carousel image" />
         </div>
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="featured-products">
+      <section className="featured-products md:w-100 md:mt-4 md:mx-10 mx-3">
         <h3 className="text-bold text-lg">Featured Products</h3>
         <div className="product-wrap pt-4 flex-col space-y-8">
           <div className="product-card md:flex md:gap-3 relative">
@@ -109,10 +109,10 @@ export default function Home() {
                   <h3 className="text-sm">64 major creators</h3>
                 </div>
                 <div className="md:mt-3 md:static absolute inset-y-16 right-4 text-white md:text-black">
-                  <FaRegArrowAltCircleRight 
+                  <FaRegArrowAltCircleRight
                     style={{
-                      width: '24px',
-                      height: 'auto',
+                      width: "24px",
+                      height: "auto",
                     }}
                   />
                 </div>
@@ -176,10 +176,10 @@ export default function Home() {
                   <h3 className="text-sm">64 major creators</h3>
                 </div>
                 <div className="md:mt-3 md:static absolute inset-y-16 right-4 text-white md:text-black">
-                  <FaRegArrowAltCircleRight 
+                  <FaRegArrowAltCircleRight
                     style={{
-                      width: '24px',
-                      height: 'auto',
+                      width: "24px",
+                      height: "auto",
                     }}
                   />
                 </div>
@@ -189,8 +189,46 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-12">
+      <section
+        className="mt-16 md:mt-20 text-white"
+        style={{
+          background:
+            "linear-gradient(100deg, #4693ED -26.21%, #79C2D2 22.16%, rgba(192, 86, 9, 0.49) 111.62%)",
+        }}
+      >
+        <div className="section-container bg-monalisa bg-no-repeat bg-cover m-5 md:m-16">
+          <div className="flex items-start gap-6 pt-6">
+            <Image
+              src={circle}
+              width={15}
+              height={15}
+              alt="circle"
+              style={{
+                paddingTop: "5px",
+              }}
+            />
+            <h3 className="md:text-3xl font-light">
+              MONALISA REDEFINED IN STYLE.
+            </h3>
+          </div>
 
+          <div className="flex pt-6 gap-6">
+            <span className="span-header text-2xl bg-red-500 inline-block">01</span>
+            <div>
+              <h5 className="text-[12px] uppercase">
+                Start on : 08:00 GTS . Monday
+              </h5>
+              <h6 className="text-[10px] pt-8">
+                GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH
+                INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR
+                HIGHEST AND LOWEST BIDS.
+              </h6>
+              <div className="flex">
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );

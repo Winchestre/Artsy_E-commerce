@@ -4,8 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/satoshi');
-
-                
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');                
 
 * {
     margin: 0;
@@ -19,11 +18,15 @@ header h3 {
     font-weight: 600;
 }
 
-li, .home>p, section>h3, section>ps {
+li, .home>p, section>h3, section>p, h6 {
     font-family: 'Satoshi', sans-serif;
 }
 
 .home h1, span {
     font-family: 'Clash Display', sans-serif;
     font-weight: 500;
+}
+
+.section-container h3, .span-header {
+    font-family: 'Bellefair', serif;
 }
